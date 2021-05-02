@@ -73,10 +73,17 @@ function isEven(number=1){
     
     
     ///5- write a function called "capitalizeWords" that takes a string as a parameter and capitalizes each word.
-    function capitalizeWords(str="my name is marwan"){
-    return str.toUpperCase() ;
-    }
-    
+function capitalizeWords(str="my name is marwan"){
+  
+        str = str.split(" ");    
+        for (var i = 0;i < str.length; i++) {
+           
+                str[i]= str[i][0].toUpperCase()+str[i].substr(1);
+            
+        }
+        return str.join(" ");
+}  
+
     // * *****************************************end***********************************
     
     
